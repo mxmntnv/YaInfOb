@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!ELEMENT equipment (item*)>
+
+<!ELEMENT item (item_id, item_name, item_type, production_date, responsible_person)>
+<!ELEMENT item_id (#PCDATA)>
+<!ELEMENT item_name (#PCDATA)>
+<!ELEMENT item_type (#PCDATA)>
+<!ELEMENT production_date (#PCDATA)>
+<!ELEMENT responsible_person (#PCDATA)>

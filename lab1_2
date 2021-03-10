@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE masters SYSTEM "lab2_2">
+
+<masters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="$LOCAL_SCHEMA$"
+         xsi:noNamespaceSchemaLocation="lab3_2.xsd">
+    <master master_id="m1">
+        <surename>Кириллов</surename>
+        <name>Кирилл</name>
+        <middle_name>Кириллович</middle_name>
+        <level>1</level>
+        <reqruitment_date>12.08.2018</reqruitment_date>
+        <equipment>
+            <item item_id="i1">
+                <item_name>Амперметр</item_name>
+                <item_type>Измерительный прибор</item_type>
+                <production_date>13.09.1997</production_date>
+                <responsible_person>Козлов Никита Игоревич</responsible_person>
+                <repairs>
+                    <repair repair_id="r1">
+                        <date>15.05.2015</date>
+                        <type>Поломка</type>
+                        <price>210 руб.</price>
+                    </repair>
+                </repairs>
+            </item>
+            <item item_id="i2">
+                <item_name>Вольтметр</item_name>
+                <item_type>Измерительный прибор</item_type>
+                <production_date>28.02.1989</production_date>
+                <responsible_person>Корж Алексей Сергеевич</responsible_person>
+                <repairs>
+                    <repair repair_id="r2">
+                        <date>20.04.2016</date>
+                        <type>Поломка</type>
+                        <price>400 руб.</price>
+                    </repair>
+                    <repair repair_id="r3">
+                        <date>11.09.2019</date>
+                        <type>Поломка</type>
+                        <price>400 руб.</price>
+                    </repair>
+                </repairs>
+            </item>
+        </equipment>
+    </master>
+    <master master_id="m2">
+        <surename>Дмитриев</surename>
+        <name>Дмитрий</name>
+        <middle_name>Дмитриевич</middle_name>
+        <level>2</level>
+        <reqruitment_date>14.10.2014</reqruitment_date>
+        <equipment>
+        <item item_id="i3">
+                <item_name>Термометр</item_name>
+                <item_type>Измерительный прибор</item_type>
+                <production_date>19.01.2005</production_date>
+                <responsible_person>Осипов Даниил Сергеевич</responsible_person>
+                <repairs>
+                    <repair repair_id="r4">
+                        <date>11.06.2020</date>
+                        <type>Поломка</type>
+                        <price>120 руб.</price>
+                    </repair>
+                </repairs>
+        </item>
+        </equipment>
+    </master>
+    <master master_id="m3">
+        <surename>Алексеев</surename>
+        <name>Алексей</name>
+        <middle_name>Алексеевич</middle_name>
+        <level>3</level>
+        <reqruitment_date>09.12.2011</reqruitment_date>
+        <equipment>
+        <item item_id="i4">
+            <item_name>Кассовый аппарат</item_name>
+            <item_type>Касса</item_type>
+            <production_date>09.01.2001</production_date>
+            <responsible_person>Антонов Максим Антонович</responsible_person>
+            <repairs>
+                <repair repair_id="r5">
+                    <date>01.02.2003</date>
+                    <type>Поломка</type>
+                    <price>1560 руб.</price>
+                </repair>
+            </repairs>
+        </item>
+        </equipment>
+    </master>
+    <master master_id="m4">
+        <surename>Никитин</surename>
+        <name>Никита</name>
+        <middle_name>Никитич</middle_name>
+        <level>2</level>
+        <reqruitment_date>17.07.2017</reqruitment_date>
+        <equipment>
+            <item item_id="i5">
+                <item_name>Амперметр</item_name>
+                <item_type>Измерительный прибор</item_type>
+                <production_date>13.09.1997</production_date>
+                <responsible_person>Козлов Никита Игоревич</responsible_person>
+                <repairs>
+                    <repair repair_id="r6">
+                        <date>15.05.2015</date>
+                        <type>Поломка</type>
+                        <price>210 руб.</price>
+                    </repair>
+                    <repair repair_id="r7">
+                        <date>19.07.2015</date>
+                        <type>Поломка</type>
+                        <price>210 руб.</price>
+                    </repair>
+                </repairs>
+            </item>
+        </equipment>
+    </master>
+    <master master_id="m5">
+        <surename>Николаев</surename>
+        <name>Николай</name>
+        <middle_name>Николаевич</middle_name>
+        <level>1</level>
+        <reqruitment_date>03.03.2003</reqruitment_date>
+        <equipment>
+            <item item_id="i6">
+                <item_name>Мусорное ведро</item_name>
+                <item_type>Вспомогательное оборудование</item_type>
+                <production_date>08.07.2014</production_date>
+                <repairs>
+                    <repair repair_id="r8">
+                        <date>20.10.2015</date>
+                        <type>Поломка</type>
+                        <price>210 руб.</price>
+                    </repair>
+                </repairs>
+            </item>
+        </equipment>
+    </master>
+<!--<equipment>-->
+<!--    <item id="1">-->
+<!--        <item_name>Амперметр</item_name>-->
+<!--        <item_type>Измерительный прибор</item_type>-->
+<!--        <production_date>13.09.1997</production_date>-->
+<!--        <responsible_person>Козлов Никита Игоревич</responsible_person>-->
+<!--    </item>-->
+<!--    <item id="2">-->
+<!--        <item_name>Вольтметр</item_name>-->
+<!--        <item_type>Измерительный прибор</item_type>-->
+<!--        <production_date>28.02.1989</production_date>-->
+<!--        <responsible_person>Корж Алексей Сергеевич</responsible_person>-->
+<!--    </item>-->
+<!--    <item id="3">-->
+<!--        <item_name>Термометр</item_name>-->
+<!--        <item_type>Измерительный прибор</item_type>-->
+<!--        <production_date>19.01.2005</production_date>-->
+<!--        <responsible_person>Осипов Даниил Сергеевич</responsible_person>-->
+<!--    </item>-->
+<!--    <item id="4">-->
+<!--        <item_name>Кассовый аппарат</item_name>-->
+<!--        <item_type>Касса</item_type>-->
+<!--        <production_date>09.01.2001</production_date>-->
+<!--        <responsible_person>Антонов Максим Антонович</responsible_person>-->
+<!--    </item>-->
+<!--    <item id="5">-->
+<!--        <item_name>Мусорное ведро</item_name>-->
+<!--        <item_type>Вспомогательное оборудование</item_type>-->
+<!--        <production_date>08.07.2014</production_date>-->
+<!--        <responsible_person>Нет</responsible_person>-->
+<!--    </item>-->
+<!--</equipment>-->
+</masters>

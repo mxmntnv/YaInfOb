@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE equipment SYSTEM "lab2_1">
+
+<equipment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="123.xsd" xsi:schemaLocation="$LOCAL_SCHEMA$ ">
+    <item>
+        <item_id>1</item_id>
+        <item_name>Амперметр</item_name>
+        <item_type>Измерительный прибор</item_type>
+        <production_date>13.09.1997</production_date>
+        <responsible_person>Козлов Никита Игоревич</responsible_person>
+    </item>
+    <item>
+        <item_id>2</item_id>
+        <item_name>Вольтметр</item_name>
+        <item_type>Измерительный прибор</item_type>
+        <production_date>28.02.1989</production_date>
+        <responsible_person>Корж Алексей Сергеевич</responsible_person>
+    </item>
+    <item>
+        <item_id>3</item_id>
+        <item_name>Термометр</item_name>
+        <item_type>Измерительный прибор</item_type>
+        <production_date>19.01.2005</production_date>
+        <responsible_person>Осипов Даниил Сергеевич</responsible_person>
+    </item>
+    <item>
+        <item_id>4</item_id>
+        <item_name>Кассовый аппарат</item_name>
+        <item_type>Касса</item_type>
+        <production_date>09.01.2001</production_date>
+        <responsible_person>Антонов Максим Антонович</responsible_person>
+    </item>
+    <item>
+        <item_id>5</item_id>
+        <item_name>Мусорное ведро</item_name>
+        <item_type>Вспомогательное оборудование</item_type>
+        <production_date>08.07.2014</production_date>
+        <responsible_person>Нет</responsible_person>
+    </item>
+</equipment>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!ELEMENT masters (master*)>
+
+<!ELEMENT master (surename, name, middle_name, level, reqruitment_date, equipment*)>
+<!ATTLIST master master_id ID #REQUIRED>
+<!ELEMENT surename (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT middle_name (#PCDATA)>
+<!ELEMENT level (#PCDATA)>
+<!ELEMENT reqruitment_date (#PCDATA)>
+
+<!ELEMENT equipment (item*)>
+        <!ELEMENT item (item_name, item_type, production_date, responsible_person?, repairs*)>
+        <!ATTLIST item item_id ID #REQUIRED>
+        <!ELEMENT item_name (#PCDATA)>
+        <!ELEMENT item_type (#PCDATA)>
+        <!ELEMENT production_date (#PCDATA)>
+        <!ELEMENT responsible_person (#PCDATA)>
+
+        <!ELEMENT repairs (repair*)>
+        <!ELEMENT repair (date, type, price)>
+        <!ATTLIST repair repair_id ID #REQUIRED>
+        <!ELEMENT date (#PCDATA)>
+        <!ELEMENT type (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>

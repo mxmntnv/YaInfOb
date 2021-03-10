@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="$LOCAL_SCHEMA$" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="masters" type="loc:mastersType" xmlns:loc="$LOCAL_SCHEMA$"/>
+  <xs:complexType name="repairType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="date"/>
+      <xs:element type="xs:string" name="type"/>
+      <xs:element type="xs:string" name="price"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="repair_id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="repairsType">
+    <xs:sequence>
+      <xs:element type="loc:repairType" name="repair" maxOccurs="unbounded" minOccurs="0" xmlns:loc="$LOCAL_SCHEMA$"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="item_name"/>
+      <xs:element name="item_type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Измерительный прибор"/>
+            <xs:enumeration value="Касса"/>
+            <xs:enumeration value="Вспомогательное оборудование"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="production_date"/>
+      <xs:element type="xs:string" name="responsible_person" minOccurs="0"/>
+      <xs:element type="loc:repairsType" name="repairs" xmlns:loc="$LOCAL_SCHEMA$"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="item_id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="equipmentType">
+    <xs:sequence>
+      <xs:element type="loc:itemType" name="item" maxOccurs="unbounded" minOccurs="0" xmlns:loc="$LOCAL_SCHEMA$"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="masterType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="surename"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="middle_name"/>
+      <xs:element name="level">
+        <xs:simpleType>
+          <xs:restriction base="xs:byte">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="reqruitment_date"/>
+      <xs:element type="loc:equipmentType" name="equipment" xmlns:loc="$LOCAL_SCHEMA$"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="master_id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="mastersType">
+    <xs:sequence>
+      <xs:element type="loc:masterType" name="master" maxOccurs="unbounded" minOccurs="0" xmlns:loc="$LOCAL_SCHEMA$"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
