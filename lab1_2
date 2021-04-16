@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE masters SYSTEM "lab2_2">
+<!--<!DOCTYPE masters SYSTEM "lab2_2">-->
+<?xml-stylesheet type='text/xsl' href='lab4.xsl'?>
 
-<masters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="$LOCAL_SCHEMA$"
-         xsi:noNamespaceSchemaLocation="lab3_2.xsd">
+<!--<masters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="$LOCAL_SCHEMA$"-->
+<!--         xsi:noNamespaceSchemaLocation="lab3_2.xsd">-->
+<masters>
     <master master_id="m1">
         <surename>Кириллов</surename>
         <name>Кирилл</name>
